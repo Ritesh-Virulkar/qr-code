@@ -12,8 +12,8 @@
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Ritesh-Virulkar/qr-code.git)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [](https://github.com/Ritesh-Virulkar/qr-code.git)
+- Live Site URL: (https://ritesh-virulkar.github.io/qr-code/)
 
 ### Built with
 
