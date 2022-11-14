@@ -1,0 +1,146 @@
+:root {
+  --clr--neutral: hsl(0, 0%, 100%);
+  --clr--dark-blue: hsl(218, 44%, 22%);
+  --clr--light-gray: hsl(212, 45%, 89%);
+  --clr--gray-blue: hsl(220, 15%, 55%);
+
+  /* typography */
+  --fs-p: 15px;
+  --fs-h3: 20px;
+
+  --fw-400: 400;
+  --fw-700: 700;
+}
+
+/* 
+
+
+*/
+/* Box sizing rules */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  font-family: "Outfit", sans-serif;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* utiltiy */
+.fw-400 {
+  font-weight: var(--fw-400);
+}
+.fw-700 {
+  font-weight: var(--fw-700);
+}
+.fs-p {
+  font-size: var(--fs-p);
+}
+.fs-h3 {
+  font-size: var(--fs-h3);
+}
+.text-neutral {
+  color: var(--clr--neutral);
+}
+.text-gray-blue {
+  color: var(--clr--gray-blue);
+}
+.text-dark-blue {
+  color: var(--clr--dark-blue);
+}
+.text-light-gray {
+  color: var(--clr--light-gray);
+}
+
+/* components */
+/* Mobile: 375px
+Desktop: 1440px */
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  background-color: var(--clr--light-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.qr-card {
+  padding: 16px;
+  background-color: var(--clr--neutral);
+  width: 275px;
+  text-align: center;
+  border-radius: 15px;
+}
+.qr-code {
+  border-radius: 10px;
+}
+.primary-text {
+  margin: 16px 0;
+}
+.secondary-text {
+  font-size: 13px;
+  padding: 0 16px;
+  padding-bottom: 16px;
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 375px;
+  }
+}
